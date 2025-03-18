@@ -63,7 +63,7 @@ bool Database::isConnected()
 void* Database::operator new(size_t size)
 {
     //Creates new database with malloc
-    std::cout << " overloaded new " << std::endl;
+    std::cout << "overloaded new ";
     void * new_database = malloc(size);
 
     //Check if unable to allocate
@@ -77,7 +77,7 @@ void* Database::operator new(size_t size)
 
 void Database::operator delete(void* new_database)
 {
-    std::cout << " overloaded delete " << std::endl;
+    std::cout << "overloaded delete ";
 
     free(new_database);
 }
