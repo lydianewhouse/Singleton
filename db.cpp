@@ -54,7 +54,7 @@ void Database::disconnect()
     connected = false;
 }
 
-bool Database::is_connected()
+bool Database::isConnected()
 {
     return connected;
 }
